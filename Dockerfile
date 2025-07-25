@@ -25,7 +25,7 @@ RUN rm -f /var/www/html/index.html
 COPY /v1/ /var/www/html/
 
 # Kopiere weitere Dateien
-COPY ./v1/sec/auth_token.json /var/www/html/v1/sec/auth_token.json
+#COPY ./v1/sec/auth_token.json /var/www/html/v1/sec/auth_token.json wird automatisch generiert 
 
 # Setze eine Umgebungsvariable für den Port
 ARG APACHE_PORT=8081
