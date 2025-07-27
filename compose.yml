@@ -10,7 +10,7 @@ services:
     volumes:
       - ./v1:/var/www/html
       - ./apache_logs:/var/log/apache2
-    environment:
-      - APACHE_PORT=8081
+      - ./sec:/var/www/html/sec/
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    
